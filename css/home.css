@@ -1,0 +1,175 @@
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 7%;
+}
+
+.hero-conteudo {
+    max-width: 600px;
+    color: var(--branco);
+}
+
+.hero .subtitulo { color: var(--dourado-claro); }
+
+.hero h1 {
+    font-family: var(--fonte-titulos);
+    font-size: clamp(40px, 5vw, 60px);
+    line-height: 1.1;
+    margin: 15px 0 25px;
+    color: var(--branco);
+}
+
+.hero p {
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 450px;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+.botao-banner {
+    background-color: var(--dourado);
+    color: var(--azul-marinho);
+}
+
+.sobre-grade {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.imagem-consultorio {
+    min-height: 400px;
+    border-radius: 8px;
+    background: center/cover no-repeat;
+    box-shadow: 20px 20px 0px var(--off-white);
+}
+
+.lista-beneficios {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.lista-beneficios li {
+    font-size: 15px;
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--texto-escuro);
+}
+
+.lista-beneficios li::before {
+    content: '✓';
+    color: var(--dourado);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.grade-diferenciais {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.grade-diferenciais article {
+    text-align: center;
+    padding: 30px 20px;
+    background: var(--branco);
+    border: 1px solid var(--borda-suave);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.grade-diferenciais article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border-color: var(--dourado);
+}
+
+.icone-diferencial {
+    display: block;
+    color: var(--dourado);
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.grade-diferenciais h3 {
+    font-size: 16px;
+    color: var(--azul-marinho);
+    margin-bottom: 8px;
+}
+
+.depoimentos {
+    background-color: var(--azul-marinho);
+    color: var(--branco);
+}
+
+.depoimentos .subtitulo, .depoimentos h2 { color: var(--dourado); }
+
+.grade-depoimentos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card-depoimento {
+    padding: 30px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.card-depoimento > p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    line-height: 1.8;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.paciente {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--dourado);
+    color: var(--azul-marinho);
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.paciente strong {
+    display: block;
+    color: var(--branco);
+    font-size: 14px;
+}
+
+.estrelas {
+    color: var(--dourado);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 992px) {
+    .hero { min-height: 70vh; text-align: center; justify-content: center; }
+    .hero-conteudo { margin: 0 auto; }
+    .hero p { margin: 0 auto 30px; }
+    .sobre-grade { grid-template-columns: 1fr; }
+    .imagem-consultorio { min-height: 300px; box-shadow: none; }
+    .grade-diferenciais, .grade-depoimentos { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 650px) {
+    .grade-diferenciais, .grade-depoimentos { grid-template-columns: 1fr; }
+}

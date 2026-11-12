@@ -1,0 +1,123 @@
+.pagina-contato {
+    min-height: 80vh;
+}
+
+.contato-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--branco);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.contato-info {
+    background: var(--azul-marinho);
+    color: var(--branco);
+    padding: 50px;
+}
+
+.contato-info h2 {
+    color: var(--branco);
+    margin-bottom: 20px;
+}
+
+.contato-info p {
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 30px;
+}
+
+.informacoes {
+    list-style: none;
+}
+
+.informacoes li {
+    font-size: 15px;
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.informacoes li i {
+    color: var(--dourado);
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+.contato-formulario {
+    padding: 50px;
+    background: var(--off-white);
+}
+
+.contato-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.campos-duplos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--borda-suave);
+    border-radius: 4px;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    background: var(--branco);
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--dourado);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+.contato-formulario .botao {
+    align-self: flex-start;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.mapa-container {
+    background: var(--branco);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid var(--borda-suave);
+}
+
+.mapa-container h3 {
+    font-family: var(--fonte-titulos);
+    color: var(--azul-marinho);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.mapa-container iframe {
+    border-radius: 8px;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .contato-wrapper { grid-template-columns: 1fr; }
+    .contato-info, .contato-formulario { padding: 30px; }
+    .mapa-container { padding: 15px; }
+}
+
+@media (max-width: 650px) {
+    .campos-duplos { grid-template-columns: 1fr; }
+}
