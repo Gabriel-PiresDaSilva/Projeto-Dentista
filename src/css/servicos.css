@@ -1,0 +1,93 @@
+.servicos {
+    background-color: var(--branco);
+    min-height: 80vh;
+}
+
+.grade-servicos-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.servico-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--branco);
+    border: 1px solid var(--borda-suave);
+    border-radius: 8px;
+    padding: 35px 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.servico-card:hover {
+    border-color: var(--dourado);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transform: translateY(-3px);
+}
+
+
+.servico-card h3 {
+    font-family: var(--fonte-titulos);
+    font-size: 22px;
+    color: var(--azul-marinho);
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.servico-card p {
+    font-size: 14px;
+    color: var(--texto-claro);
+    line-height: 1.6;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.link-interesse {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--texto-escuro);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.link-interesse i {
+    color: var(--dourado);
+    transition: transform 0.3s ease;
+}
+
+
+.servico-card:hover .link-interesse {
+    color: var(--dourado);
+}
+
+.servico-card:hover .link-interesse i {
+    transform: translateX(5px); 
+}
+
+
+@media (max-width: 992px) {
+    .grade-servicos-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .servico-card {
+        padding: 25px 20px;
+    }
+
+    .numero-servico {
+        font-size: 24px;
+    }
+
+    .servico-card h3 {
+        font-size: 20px;
+    }
+}
