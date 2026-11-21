@@ -1,26 +1,13 @@
-
-/* =========================================
-   SERVIÇOS - DRA. MILENY SANTOS
-   Identidade: azul petróleo + champagne
-   Base compartilhada: home.css
-========================================= */
-
 .pagina-servicos {
   background: var(--ms-creme);
 }
 
-/* =========================================
-   APRESENTAÇÃO
-========================================= */
-
 .servicos-intro {
   padding: clamp(65px, 9vw, 110px) 8%;
-  background: linear-gradient(
-    120deg,
-    var(--ms-azul-escuro) 0%,
-    var(--ms-azul) 75%,
-    #164b61 100%
-  );
+  background: linear-gradient(120deg,
+      var(--ms-azul-escuro) 0%,
+      var(--ms-azul) 75%,
+      #164b61 100%);
   color: var(--ms-creme);
   text-align: center;
 }
@@ -49,17 +36,13 @@
   color: var(--ms-champagne);
 }
 
-.servicos-intro-conteudo > p:last-child {
+.servicos-intro-conteudo>p:last-child {
   max-width: 590px;
   margin: 0 auto;
   font-size: 17px;
   line-height: 1.8;
   color: rgba(247, 245, 239, 0.8);
 }
-
-/* =========================================
-   LISTAGEM DE SERVIÇOS
-========================================= */
 
 .servicos-lista {
   padding: clamp(70px, 8vw, 105px) 8%;
@@ -93,10 +76,6 @@
   line-height: 1.8;
   color: var(--ms-texto);
 }
-
-/* =========================================
-   CARDS
-========================================= */
 
 .grade-servicos-cards {
   display: grid;
@@ -234,18 +213,12 @@
   transform: translateX(6px);
 }
 
-/* =========================================
-   CHAMADA FINAL
-========================================= */
-
 .servicos-chamada {
   padding: clamp(65px, 8vw, 95px) 8%;
 
-  background: linear-gradient(
-    110deg,
-    var(--ms-azul-escuro),
-    var(--ms-azul)
-  );
+  background: linear-gradient(110deg,
+      var(--ms-azul-escuro),
+      var(--ms-azul));
 
   text-align: center;
 }
@@ -266,7 +239,7 @@
   color: #fff;
 }
 
-.servicos-chamada > p:not(.rotulo) {
+.servicos-chamada>p:not(.rotulo) {
   max-width: 500px;
   margin: 0 auto 32px;
 
@@ -275,10 +248,6 @@
 
   color: rgba(247, 245, 239, 0.8);
 }
-
-/* =========================================
-   RESPONSIVIDADE
-========================================= */
 
 @media (max-width: 992px) {
   .servicos-cabecalho {
