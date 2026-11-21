@@ -1,0 +1,341 @@
+
+/* =========================================
+   SERVIÇOS - DRA. MILENY SANTOS
+   Identidade: azul petróleo + champagne
+   Base compartilhada: home.css
+========================================= */
+
+.pagina-servicos {
+  background: var(--ms-creme);
+}
+
+/* =========================================
+   APRESENTAÇÃO
+========================================= */
+
+.servicos-intro {
+  padding: clamp(65px, 9vw, 110px) 8%;
+  background: linear-gradient(
+    120deg,
+    var(--ms-azul-escuro) 0%,
+    var(--ms-azul) 75%,
+    #164b61 100%
+  );
+  color: var(--ms-creme);
+  text-align: center;
+}
+
+.servicos-intro-conteudo {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.servicos-intro .rotulo {
+  justify-content: center;
+  color: var(--ms-champagne);
+}
+
+.servicos-intro h1 {
+  margin: 0 auto 22px;
+  font-family: var(--ms-titulos);
+  font-size: clamp(42px, 5.5vw, 68px);
+  font-weight: 500;
+  line-height: 1.08;
+  color: #fff;
+  text-wrap: balance;
+}
+
+.servicos-intro h1 span {
+  color: var(--ms-champagne);
+}
+
+.servicos-intro-conteudo > p:last-child {
+  max-width: 590px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.8;
+  color: rgba(247, 245, 239, 0.8);
+}
+
+/* =========================================
+   LISTAGEM DE SERVIÇOS
+========================================= */
+
+.servicos-lista {
+  padding: clamp(70px, 8vw, 105px) 8%;
+  background: linear-gradient(180deg, var(--ms-creme), #fff);
+}
+
+.servicos-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicos-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 42px;
+}
+
+.servicos-cabecalho h2 {
+  max-width: 600px;
+  font-size: clamp(34px, 4vw, 48px);
+  line-height: 1.1;
+  color: var(--ms-azul);
+}
+
+.servicos-legenda {
+  max-width: 360px;
+  margin: 0 0 5px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--ms-texto);
+}
+
+/* =========================================
+   CARDS
+========================================= */
+
+.grade-servicos-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.servico-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+
+  background: #fff;
+  border: 1px solid rgba(7, 59, 89, 0.12);
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.servico-foto {
+  display: block;
+  width: 100%;
+  height: 220px;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.servico-conteudo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 30px 32px 32px;
+}
+
+.servico-card::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 0;
+  background: var(--ms-dourado);
+  transition: height 0.3s ease;
+}
+
+.servico-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(168, 133, 91, 0.55);
+  box-shadow: 0 18px 38px rgba(7, 59, 89, 0.09);
+}
+
+.servico-card:hover::before {
+  height: 100%;
+}
+
+.servico-icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+
+  background: rgba(231, 214, 168, 0.35);
+  border: 1px solid rgba(168, 133, 91, 0.2);
+  border-radius: 50%;
+
+  color: var(--ms-dourado);
+  font-size: 20px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.servico-card:hover .servico-icone {
+  background: var(--ms-azul);
+  color: var(--ms-champagne);
+}
+
+.servico-card h3 {
+  margin: 0 0 13px;
+  font-family: var(--ms-titulos);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--ms-azul);
+}
+
+.servico-card p {
+  margin: 0 0 28px;
+  flex-grow: 1;
+
+  font-family: var(--ms-corpo);
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--ms-texto);
+}
+
+.link-interesse {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+
+  font-family: var(--ms-corpo);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  color: var(--ms-azul);
+
+  transition: color 0.3s ease;
+}
+
+.link-interesse i {
+  color: var(--ms-dourado);
+  transition: transform 0.3s ease;
+}
+
+.servico-card:hover .link-interesse {
+  color: var(--ms-dourado);
+}
+
+.servico-card:hover .link-interesse i {
+  transform: translateX(6px);
+}
+
+/* =========================================
+   CHAMADA FINAL
+========================================= */
+
+.servicos-chamada {
+  padding: clamp(65px, 8vw, 95px) 8%;
+
+  background: linear-gradient(
+    110deg,
+    var(--ms-azul-escuro),
+    var(--ms-azul)
+  );
+
+  text-align: center;
+}
+
+.servicos-chamada .rotulo {
+  justify-content: center;
+}
+
+.servicos-chamada h2 {
+  max-width: 700px;
+  margin: 0 auto 18px;
+
+  font-family: var(--ms-titulos);
+  font-size: clamp(38px, 4.5vw, 54px);
+  font-weight: 500;
+  line-height: 1.1;
+
+  color: #fff;
+}
+
+.servicos-chamada > p:not(.rotulo) {
+  max-width: 500px;
+  margin: 0 auto 32px;
+
+  font-size: 16px;
+  line-height: 1.8;
+
+  color: rgba(247, 245, 239, 0.8);
+}
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 992px) {
+  .servicos-cabecalho {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .servicos-legenda {
+    max-width: 600px;
+  }
+
+  .grade-servicos-cards {
+    gap: 18px;
+  }
+
+  .servico-card {
+    padding: 30px 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .servicos-intro {
+    padding: 65px 6%;
+  }
+
+  .servicos-intro h1 {
+    font-size: 43px;
+  }
+
+  .servicos-lista {
+    padding: 65px 6%;
+  }
+
+  .servicos-cabecalho h2 {
+    font-size: 36px;
+  }
+
+  .grade-servicos-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .servico-card {
+    min-height: 270px;
+    padding: 28px 24px;
+  }
+
+  .servico-card h3 {
+    font-size: 30px;
+  }
+
+  .servicos-chamada {
+    padding: 65px 6%;
+  }
+
+  .servicos-chamada h2 {
+    font-size: 39px;
+  }
+}
