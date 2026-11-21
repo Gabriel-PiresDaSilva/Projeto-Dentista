@@ -176,7 +176,6 @@ p {
     background: var(--azul-profundo);
     color: #A0B2C0;
     padding: 30px 5%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;

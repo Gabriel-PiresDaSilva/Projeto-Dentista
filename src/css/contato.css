@@ -41,6 +41,20 @@
     gap: 15px;
 }
 
+.informacoes li a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.informacoes li a:hover {
+    color: var(--dourado);
+}
+
+.informacoes li .fa-instagram {
+    font-size: 20px;
+}
+
 .informacoes li i {
     color: var(--dourado);
     font-size: 20px;
@@ -70,7 +84,6 @@ input, textarea {
     padding: 15px;
     border: 1px solid var(--borda-suave);
     border-radius: 4px;
-    font-family: var(--fonte-principal);
     font-size: 14px;
     background: var(--branco);
     transition: 0.3s;
@@ -101,7 +114,6 @@ input:focus, textarea:focus {
 }
 
 .mapa-container h3 {
-    font-family: var(--fonte-titulos);
     color: var(--azul-marinho);
     font-size: 24px;
     margin-bottom: 20px;
@@ -120,4 +132,43 @@ input:focus, textarea:focus {
 
 @media (max-width: 650px) {
     .campos-duplos { grid-template-columns: 1fr; }
+}
+
+/* =========================================
+   PADRONIZAÇÃO DO HEADER E FOOTER
+========================================= */
+
+/* Logo */
+.topo-logo-texto strong {
+    font-family: var(--ms-titulos);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--ms-azul);
+}
+
+.topo-logo-texto small {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: var(--ms-dourado);
+}
+
+/* Rodapé */
+.rodape {
+    display: block;
+    width: 100%;
+}
+
+.rodape-base {
+    display: block;
+    width: 100%;
+}
+
+.rodape-base p {
+    display: block;
+    width: 100%;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba(247, 245, 239, 0.55);
 }
