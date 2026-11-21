@@ -1,14 +1,3 @@
-
-/* =========================================
-   SOBRE - DRA. MILENY SANTOS
-   Identidade: azul petróleo + champagne
-   Compartilha o home.css
-========================================= */
-
-/* =========================================
-   BANNER
-========================================= */
-
 .sobre-banner {
   min-height: 340px;
   display: flex;
@@ -16,12 +5,10 @@
   padding: 70px 8%;
 
   background:
-    linear-gradient(
-      90deg,
+    linear-gradient(90deg,
       rgba(5, 35, 51, 0.98),
       rgba(5, 35, 51, 0.82),
-      rgba(5, 35, 51, 0.65)
-    ),
+      rgba(5, 35, 51, 0.65)),
     url("../img/foto-7.jpg") center 45% / cover no-repeat;
 
   color: var(--ms-creme);
@@ -41,17 +28,13 @@
   color: #fff;
 }
 
-.sobre-banner-conteudo > p:last-child {
+.sobre-banner-conteudo>p:last-child {
   max-width: 550px;
   font-size: 17px;
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.82);
 }
 
-
-/* =========================================
-   APRESENTAÇÃO DA DENTISTA
-========================================= */
 
 .pagina-sobre {
   padding: 110px 8%;
@@ -97,7 +80,7 @@
   z-index: 0;
 }
 
-.sobre-imagem-principal > img {
+.sobre-imagem-principal>img {
   position: relative;
   z-index: 1;
   display: block;
@@ -108,13 +91,6 @@
   border-radius: 6px;
   box-shadow: 0 24px 50px -18px rgba(7, 59, 89, 0.3);
 }
-
-
-
-
-/* =========================================
-   CONTEÚDO
-========================================= */
 
 .sobre-conteudo {
   max-width: 550px;
@@ -129,7 +105,7 @@
   color: var(--ms-azul);
 }
 
-.sobre-conteudo > p:not(.rotulo) {
+.sobre-conteudo>p:not(.rotulo) {
   margin-bottom: 18px;
   font-size: 16px;
   line-height: 1.9;
@@ -161,11 +137,6 @@
   color: var(--ms-dourado);
 }
 
-
-/* =========================================
-   NOSSO ESPAÇO
-========================================= */
-
 .sobre-espaco {
   padding: 0px 100px 8%;
   background: #fff;
@@ -190,7 +161,7 @@
   color: var(--ms-azul);
 }
 
-.sobre-espaco-cabecalho > p:last-child {
+.sobre-espaco-cabecalho>p:last-child {
   font-size: 16px;
   line-height: 1.8;
   color: var(--ms-texto);
@@ -224,11 +195,6 @@
 .foto-galeria:hover img {
   transform: scale(1.04);
 }
-
-
-/* =========================================
-   DIFERENCIAIS
-========================================= */
 
 .sobre-diferenciais {
   padding: 95px 8%;
@@ -290,11 +256,6 @@
   color: rgba(247, 245, 239, 0.75);
 }
 
-
-/* =========================================
-   CHAMADA FINAL
-========================================= */
-
 .sobre-chamada {
   padding: 90px 8%;
   background: var(--ms-creme);
@@ -313,18 +274,13 @@
   color: var(--ms-azul);
 }
 
-.sobre-chamada > p:not(.rotulo) {
+.sobre-chamada>p:not(.rotulo) {
   max-width: 500px;
   margin: 0 auto 30px;
   font-size: 16px;
   line-height: 1.8;
   color: var(--ms-texto);
 }
-
-
-/* =========================================
-   RESPONSIVIDADE
-========================================= */
 
 @media (max-width: 992px) {
 
@@ -361,7 +317,7 @@
     padding: 110px 100px 50px 8%;
   }
 
-  .sobre-imagem-principal > img {
+  .sobre-imagem-principal>img {
     height: 420px;
   }
 
