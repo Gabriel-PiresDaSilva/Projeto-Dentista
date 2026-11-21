@@ -1,0 +1,140 @@
+.termos-pagina {
+  padding: clamp(70px, 9vw, 110px) 6%;
+  background: linear-gradient(180deg, var(--ms-creme), #fff);
+}
+
+.termos-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.termos-wrap h1 {
+  font-family: var(--ms-titulos);
+  font-size: clamp(36px, 4.5vw, 54px);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--ms-azul);
+  margin-bottom: 12px;
+}
+
+.termos-atualizacao {
+  font-size: 14px;
+  color: var(--ms-dourado);
+  margin-bottom: 40px;
+}
+
+/* Índice */
+.termos-indice {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  padding: 20px 24px;
+  margin-bottom: 50px;
+  background: #fff;
+  border: 1px solid rgba(7, 59, 89, 0.12);
+  border-left: 3px solid var(--ms-dourado);
+  border-radius: 6px;
+}
+
+.termos-indice a {
+  font-size: 14px;
+  color: var(--ms-azul);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.termos-indice a:hover {
+  color: var(--ms-dourado);
+}
+
+/* Blocos */
+.termos-bloco {
+  margin-bottom: 56px;
+  scroll-margin-top: 110px;
+}
+
+.termos-bloco h2 {
+  font-family: var(--ms-titulos);
+  font-size: clamp(28px, 3vw, 38px);
+  font-weight: 600;
+  color: var(--ms-azul);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(7, 59, 89, 0.15);
+}
+
+.termos-bloco h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ms-azul);
+  margin: 28px 0 10px;
+}
+
+.termos-bloco p {
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--ms-texto);
+  margin-bottom: 14px;
+}
+
+.termos-bloco ul {
+  padding-left: 22px;
+  margin-bottom: 16px;
+}
+
+.termos-bloco ul li {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--ms-texto);
+  margin-bottom: 6px;
+}
+
+.termos-bloco a {
+  color: var(--ms-azul);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s ease;
+}
+
+.termos-bloco a:hover {
+  color: var(--ms-dourado);
+}
+
+/* Contato */
+.termos-contato {
+  list-style: none;
+  padding: 0 !important;
+}
+
+.termos-contato li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.termos-contato li i {
+  color: var(--ms-dourado);
+  width: 20px;
+  margin-top: 4px;
+}
+
+/* Ações finais */
+.termos-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(7, 59, 89, 0.12);
+}
+
+/* Rodapé link termos */
+.rodape-base a {
+  color: var(--ms-champagne-escuro);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.rodape-base a:hover {
+  color: #fff;
+}
