@@ -128,7 +128,9 @@
   font-size: 15px;
   color: var(--ms-texto);
 }
-
+.termos-uso{
+    color: var(--ms-champagne-escuro);
+  }
 .lista-beneficios li::before {
   content: "\f00c";
   font-family: "Font Awesome 6 Free";
@@ -313,9 +315,6 @@
     padding: 60px 7%;
   }
 
-  .pagina-sobre {
-    padding: 110px 100px 50px 8%;
-  }
 
   .sobre-imagem-principal>img {
     height: 420px;
@@ -332,7 +331,7 @@
   }
 
   .sobre-espaco {
-    padding: 0px 100px 8%;
+    padding: 0px 50px 8%;
   }
 
   .galeria-consultorio {

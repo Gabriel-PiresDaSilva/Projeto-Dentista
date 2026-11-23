@@ -307,4 +307,7 @@
   .servicos-chamada h2 {
     font-size: 39px;
   }
+  .termos-uso{
+    color: var(--ms-champagne-escuro);
+  }
 }

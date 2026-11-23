@@ -1,181 +1,363 @@
 .pagina-contato {
-    min-height: 80vh;
+  min-height: 80vh;
+  padding: 70px 0;
+  background: #ffffff;
 }
 
+.pagina-contato .container {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.pagina-contato .subtitulo {
+  display: block;
+  margin-bottom: 10px;
+  color: #b58b00;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.pagina-contato > .container > h2 {
+  margin: 0;
+  color: #0a2a43;
+  font-family: var(--ms-titulos, "Cormorant Garamond"), Georgia, serif;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* CARTÃO DE CONTATO */
+
 .contato-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: var(--branco);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
-    margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin-top: 38px;
+  margin-bottom: 50px;
+  overflow: hidden;
+
+  background: #f9f9f9;
+  border-radius: 12px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.09);
 }
 
 .contato-info {
-    background: var(--azul-marinho);
-    color: var(--branco);
-    padding: 50px;
+  padding: 45px;
+  background: #0a2a43;
+  color: #ffffff;
 }
 
 .contato-info h2 {
-    color: var(--branco);
-    margin-bottom: 20px;
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-family: var(--ms-titulos, "Cormorant Garamond"), Georgia, serif;
+  font-size: 32px;
+  font-weight: 600;
 }
 
 .contato-info p {
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 30px;
+  margin: 0 0 28px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .informacoes {
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .informacoes li {
-    font-size: 15px;
-    margin: 20px 0;
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-}
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin: 20px 0;
 
-.informacoes li a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.informacoes li a:hover {
-    color: var(--dourado);
-}
-
-.informacoes li .fa-instagram {
-    font-size: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .informacoes li i {
-    color: var(--dourado);
-    font-size: 20px;
-    margin-top: 3px;
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: #d4af37;
+  font-size: 19px;
+}
+
+.informacoes li .fa-instagram {
+  font-size: 20px;
+}
+
+.informacoes li a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.informacoes li a:hover {
+  color: #d4af37;
 }
 
 .contato-formulario {
-    padding: 50px;
-    background: var(--off-white);
+  display: flex;
+  align-items: center;
+  padding: 45px;
+  background: #f9f9f9;
 }
 
 .contato-formulario form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 14px;
+  margin: 0;
 }
 
 .campos-duplos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
 }
 
-input,
-textarea {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid var(--borda-suave);
-    border-radius: 4px;
-    font-size: 14px;
-    background: var(--branco);
-    transition: 0.3s;
+.contato-formulario input,
+.contato-formulario textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 14px;
+
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+
+  background: #ffffff;
+  color: #333333;
+
+  font-family: var(--ms-corpo, "Jost"), sans-serif;
+  font-size: 13px;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-input:focus,
-textarea:focus {
-    outline: none;
-    border-color: var(--dourado);
-    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+.contato-formulario input {
+  height: 45px;
+}
+
+.contato-formulario textarea {
+  min-height: 104px;
+  resize: vertical;
+}
+
+.contato-formulario input::placeholder,
+.contato-formulario textarea::placeholder {
+  color: #777777;
+  opacity: 1;
+}
+
+.contato-formulario input:focus,
+.contato-formulario textarea:focus {
+  outline: none;
+  border-color: #d4af37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.12);
 }
 
 .contato-formulario .botao {
-    align-self: flex-start;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+  min-height: 43px;
+  padding: 12px 18px;
+
+  border: none;
+  border-radius: 4px;
+
+  background: #d4af37;
+  color: #061b2c;
+
+  font-family: var(--ms-corpo, "Jost"), sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.contato-formulario .botao:hover {
+  background: #e7c653;
+  transform: translateY(-2px);
 }
 
 .mapa-container {
-    background: var(--branco);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    border: 1px solid var(--borda-suave);
+  padding: 28px;
+  margin-bottom: 50px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .mapa-container h3 {
-    color: var(--azul-marinho);
-    font-size: 24px;
-    margin-bottom: 20px;
+  margin: 0 0 20px;
+  color: #0a2a43;
+  font-family: var(--ms-titulos, "Cormorant Garamond"), Georgia, serif;
+  font-size: 27px;
+  font-weight: 600;
 }
 
 .mapa-container iframe {
-    border-radius: 8px;
-    display: block;
+  display: block;
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 8px;
 }
 
 @media (max-width: 992px) {
-    .contato-wrapper {
-        grid-template-columns: 1fr;
-    }
+  .pagina-contato {
+    padding: 55px 0;
+  }
 
-    .contato-info,
-    .contato-formulario {
-        padding: 30px;
-    }
+  .pagina-contato .container {
+    width: 90%;
+  }
 
-    .mapa-container {
-        padding: 15px;
-    }
+  .contato-wrapper {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  .contato-info {
+    padding: 40px;
+  }
+
+  .contato-formulario {
+    padding: 40px;
+  }
+
+  .mapa-container {
+    padding: 22px;
+  }
 }
 
 @media (max-width: 650px) {
-    .campos-duplos {
-        grid-template-columns: 1fr;
-    }
-}
+  .pagina-contato {
+    padding: 40px 0;
+  }
 
-.topo-logo-texto strong {
-    font-family: var(--ms-titulos);
+  .pagina-contato .container {
+    width: 90%;
+  }
+
+  .pagina-contato .subtitulo {
+    font-size: 11px;
+    letter-spacing: 2.5px;
+  }
+
+  .pagina-contato > .container > h2 {
     font-size: 30px;
-    font-weight: 600;
-    line-height: 1;
-    color: var(--ms-azul);
+  }
+
+  .contato-wrapper {
+    grid-template-columns: 1fr;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    border-radius: 9px;
+  }
+
+  .contato-info {
+    padding: 30px 24px;
+  }
+
+  .contato-info h2 {
+    font-size: 28px;
+  }
+
+  .contato-info p {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .informacoes li {
+    gap: 12px;
+    margin: 17px 0;
+    font-size: 13px;
+  }
+
+  .informacoes li i {
+    font-size: 17px;
+  }
+
+  .contato-formulario {
+    padding: 28px 22px;
+  }
+
+  .contato-formulario form {
+    gap: 13px;
+  }
+
+  .campos-duplos {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .contato-formulario input {
+    height: 48px;
+  }
+
+  .contato-formulario textarea {
+    min-height: 120px;
+  }
+
+  .contato-formulario .botao {
+    min-height: 48px;
+    font-size: 14px;
+  }
+
+  .mapa-container {
+    padding: 15px;
+    margin-bottom: 35px;
+  }
+
+  .mapa-container h3 {
+    font-size: 23px;
+  }
+
+  .mapa-container iframe {
+    height: 260px;
+  }
 }
 
-.topo-logo-texto small {
-    font-size: 18px;
-    letter-spacing: 2px;
-    color: var(--ms-dourado);
-}
+@media (max-width: 380px) {
+  .pagina-contato > .container > h2 {
+    font-size: 27px;
+  }
 
-.rodape {
-    display: block;
-    width: 100%;
-}
+  .contato-info {
+    padding: 25px 18px;
+  }
 
-.rodape-base {
-    display: block;
-    width: 100%;
-}
+  .contato-formulario {
+    padding: 24px 17px;
+  }
 
-.rodape-base p {
-    display: block;
-    width: 100%;
-    margin: 0;
+  .informacoes li {
     font-size: 12px;
-    line-height: 1.5;
-    color: rgba(247, 245, 239, 0.55);
+  }
+
+  .mapa-container iframe {
+    height: 230px;
+  }
 }
